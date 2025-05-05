@@ -32,6 +32,14 @@ enum abstract AchievementOp(String)
 class Achievements {
 	public static function init()
 	{
+		createAchievement('act1_nomiss',			{name: "You call this \"Light Speed\"??", description: "Beat Act 1 on Hard with no Misses."});
+		createAchievement('encoreact1_nomiss',		{name: "We should play again sometime", description: "Beat Act 1 on Encore with no Misses."});
+		createAchievement('act2_nomiss',		    {name: "POLLY POCKET!!!!!111", description: "Beat Act 2 on Hard with no Misses."});
+		createAchievement('encoreact2_nomiss',		{name: "Dude... you dont like ice cream, shut up....", description: "Beat Act 2 on Encore with no Misses."});
+		createAchievement('botofe',		    		{name: "I just got 17 bucks on my wallet", description: "Beat \"Boto fé\"."});
+		createAchievement('super',			    	{name: "Now I'll Show you! RAAAH!!!!", description: "Get 50 rings"});
+		createAchievement('info',		    		{name: "So you\'re into lore stuff huh? that\'s cool!", description: "Open Bios Menu."});
+		
 		createAchievement('friday_night_play',		{name: "Freaky on a Friday Night", description: "Play on a Friday... Night.", hidden: true});
 		#if BASE_GAME_FILES
 		createAchievement('week1_nomiss',			{name: "She Calls Me Daddy Too", description: "Beat Week 1 on Hard with no Misses."});
