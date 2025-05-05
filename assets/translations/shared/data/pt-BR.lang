@@ -33,7 +33,7 @@ pause_exit_to_menu: "Voltar ao Menu"
 pause_back: "Voltar"
 practice_mode: "Modo Prática"
 charting_mode: "Modo Charter"
-blueballed: "Broxadas: {1}"
+blueballed: "Mortes: {1}"
 
 // Main Menu
 images/mainmenu/menu_story_mode: "images/pt-BR/mainmenu/menu_story_mode"

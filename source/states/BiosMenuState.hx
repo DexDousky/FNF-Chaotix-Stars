@@ -38,6 +38,7 @@ class BiosMenuState extends MusicBeatState {
     var characterName:FlxText;
 
 	override function create() {
+		#if ACHIEVEMENTS_ALLOWED Achievements.unlock('info'); #end
 		FlxG.sound.playMusic(Paths.music('breakfast'), 1);
 
 		FlxG.mouse.visible = false;

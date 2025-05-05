@@ -66,6 +66,8 @@ class Achievements {
 		#if (TITLE_SCREEN_EASTER_EGG || PSYCH_WATERMARKS)
 		createAchievement('pessy_easter_egg',		{name: "Engine Gal Pal", description: "Teehee, you found me~!", hidden: true});
 		#end
+	
+
 
 		//dont delete this thing below
 		_originalLength = _sortID + 1;
