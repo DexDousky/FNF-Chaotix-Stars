@@ -39,7 +39,7 @@ class CreditsState extends MusicBeatState
 
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 				
-			['CHAOTIX TEAM'],
+			['CHAOTIX CREW'],
 			['Dex Dousky',							'Dex',				'The head of the mod and did ALMOST everything',			 'https://dousky.carrd.co/',											'FF6B01'],
 			['New Dousky',							'New',				'Owner of New the Wolfox, and supported Dex :3',			 'https://bsky.app/profile/thefolfdousky.bsky.social',					'4B009A'],
 			['Rodney,An Imaginative Person',		'Rodney',			'Coded and Optimized some scripts for the mod',				 'https://www.youtube.com/channel/UCzcbZBZPz6mNOO-DP7F9atA',			'FF6B01'],
@@ -52,9 +52,6 @@ class CreditsState extends MusicBeatState
 			['Step',								'Step',				'Step The Dino',											 'https://bsky.app/profile/passohere.bsky.socia0l',						'FF6B01'],
 			['Kaique',								'Kaique',			'Kaique the Hedgehog',										 'https://www.youtube.com/watch?v=adX_x5Bc0Vg&t=622s&ab',				'FF6B01'],
 			['Pauly',								'Pauly',			'Pauly the .... bird? (i dont really know what is him)',	 'https://www.youtube.com/watch?v=adX_x5Bc0Vg&t=622s&ab',				'5838F8'],
-			['Gadget',								'Gadget',			'Gadget the Alpaca',										 'https://bsky.app/profile/sushitop.bsky.social',						'25640E'],
-			['Gabby',								'Gabby',			'Gabby the Crow',										 	 'https://bsky.app/profile/crowplexus.bsky.social',						'5838F8'],
-			['Lufe',								'Lufe',				'Lufe the Fox',												 'https://twitter.com/lufekaji',										'b60055'],
 			['Spear',								'Spear',			'Spear the Octopus',										 'https://twitter.com/mrblub58',										'F0FFFF'],
 			['Spring',								'Spring',			'Spring the Kiwi',											 'https://bsky.app/profile/neontflame.bsky.social',						'013220'],
 			['Pit',									'Pit',				'Pit the Bull',												 'https://bsky.app/profile/pitthebull.bsky.social',						'013220'],
