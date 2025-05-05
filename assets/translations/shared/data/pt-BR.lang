@@ -41,7 +41,7 @@ images/mainmenu/menu_credits: "images/pt-BR/mainmenu/menu_credits"
 
 // Story Mode
 images/Menu_Tracks: "images/pt-BR/Menu_Tracks"
-week_score: "PONTUAÇÃO: {1}"
+week_score: "SCORE: {1}"
 
 storyname_week5: "NEVASCA VERMELHA"
 storyname_week6: "simulador de confronto ft. moawling"
@@ -186,7 +186,7 @@ description_shaders: "Se desmarcado, desativa as shaders.\nElas são usadas para
 setting_gpu_caching: "Caching na GPU"
 description_gpu_caching: "Se marcado, permite que a GPU seja usada para armazenar texturas, reduzindo uso da memória RAM.\nNão ligue isso se sua Placa de Vídeo é ruim."
 setting_framerate: "Taxa de Atualização"
-description_framerate: "Também chamado de "Framerate", preciso explicar?"
+description_framerate: "Bem alto explicativo, mas não recomendo tu colocar isso no maximo se teu pc não aguentar"
 
 // Visuals Settings
 setting_note_skins: "Estilo de Notas"
@@ -263,9 +263,9 @@ description_sustains_as_one_note: "Se marcado, notas longas não poderão ser ac
 now_loading: "Carregando{1}"
 
 // Difficulties
-difficulty_easy: "Fácil"
+difficulty_easy: "Facil"
 difficulty_normal: "Normal"
-difficulty_hard: "Difícil"
+difficulty_hard: "Dificil"
 
 images/menudifficulties/easy: "images/pt-BR/menudifficulties/easy"
 images/menudifficulties/hard: "images/pt-BR/menudifficulties/hard"
