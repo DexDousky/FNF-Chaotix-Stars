@@ -44,10 +44,12 @@ class CreditsState extends MusicBeatState
 			['New Dousky',							'New',				'Owner of New the Wolfox, and supported Dex :3',			 'https://bsky.app/profile/thefolfdousky.bsky.social',					'4B009A'],
 			['Rodney,An Imaginative Person',		'Rodney',			'Coded and Optimized some scripts for the mod',				 'https://www.youtube.com/channel/UCzcbZBZPz6mNOO-DP7F9atA',			'FF6B01'],
 			['Joovictor757',						'joovitor',			'Help Coding arrow colors and the ring mechanic',			 'https://bsky.app/profile/joovict81371542.bsky.social',				'25640E'],
-			['NeonTFlame',							'Neon',				'Animator, Musician and the guy behind \'Hype Encore\' Inst','https://bsky.app/profile/neontflame.bsky.social',					'25640E'],
+			['NeonTFlame',							'Neon',				'Animator, Musician and the guy behind \'Hype Encore\' Inst','https://bsky.app/profile/neontflame.bsky.social',						'25640E'],
 			['LeoZone 2.0',							'Leo',				'Artist behind the week 1 and 2 backgrounds',				 'https://bsky.app/profile/leuzone20.bsky.social',						'E1D97D'],
 			['LeoroyX',								'Czerny',			'Charter of Starlight and Souvenir',						 'https://twitter.com/leoroy63',										'25640E'],
+			
 			[''],
+			
 			['Special Guests'],
 			['Step',								'Step',				'Step The Dino',											 'https://bsky.app/profile/passohere.bsky.socia0l',						'FF6B01'],
 			['Kaique',								'Kaique',			'Kaique the Hedgehog',										 'https://www.youtube.com/watch?v=adX_x5Bc0Vg&t=622s&ab',				'FF6B01'],
@@ -55,11 +57,25 @@ class CreditsState extends MusicBeatState
 			['Spear',								'Spear',			'Spear the Octopus',										 'https://twitter.com/mrblub58',										'F0FFFF'],
 			['Spring',								'Spring',			'Spring the Kiwi',											 'https://bsky.app/profile/neontflame.bsky.social',						'013220'],
 			['Pit',									'Pit',				'Pit the Bull',												 'https://bsky.app/profile/pitthebull.bsky.social',						'013220'],
-			['Special Thanks'],
-			['Siwsi',			                'crowplexus',	    	'Close Friend of Dex and helped him teaching the basics',	 'https://twitter.com/IamMorwen',	                                    'CFCFCF'],
-			["Shadow Mario",		                "shadowmario",		"\"Learn how to code dude\" was a cool quote, since then I really started thinking coding shit and here we are :]","https://ko-fi.com/shadowmario",	"444444"],
-			['Blue Hollow',                          'Diogo Blue',		'Metallix (a.k.a Metal Dex) Designer and also a close friend', '',																	'CFCFCF'],
+			
 			[''],
+
+			['Special Thanks'],
+			['Siwsi',			                	'crowplexus',	    'Close Friend of Dex and helped him teaching the basics',	 'https://twitter.com/IamMorwen',	                               		'CFCFCF'],
+			["Shadow Mario",		                "shadowmario",		"\"Learn how to code dude\" was a cool quote, since then I really started thinking coding shit and here we are :]","https://ko-fi.com/shadowmario",	"444444"],
+			['Blue Hollow',                         'Diogo Blue',		'Metallix (a.k.a Metal Dex) Designer and also a close friend', '',																	'CFCFCF'],
+			['DaricrahDev',                         'DaricrahDev',		'\"The man behind the Bios\""', 							 'https://gamebanana.com/members/2014882',								'CFCFCF'],
+			
+			[''],
+
+			['Testers'],
+			
+			['DarkFrame',                          	'Darkframe',		'\"O I I A I I O I I I A I ... RECEEEBA\""', 					'',																	'625CC1'],
+			['Bellarya',                          	'Bellarya',			'\"california giirls are unforgetableeee-\""', 					'',																	'625CC1'],
+			['Vaktors',                          	'Vaktors',			'\"gostei do mod, tem muitas gostosas\""', 					 	'',																	'625CC1'],
+			
+			[''],
+			
 			["Psych Engine Team"],
 			["Shadow Mario",		"shadowmario",		"Main Programmer and Head of Psych Engine",					"https://ko-fi.com/shadowmario",	"444444"],
 			["Riveren",				"riveren",			"Main Artist/Animator of Psych Engine",						"https://x.com/riverennn",			"14967B"],

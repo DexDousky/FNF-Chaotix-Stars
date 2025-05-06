@@ -70,6 +70,31 @@ yes: "Sim"
 no: "Não"
 
 // Achievements
+achievement_act1_nomiss: "Você chama isso de velocidade??"
+description_act1_nomiss: "Complete o Ato 1 no Modo Dificil e sem errar."
+
+achievement_encoreact1_nomiss: "Deveriamos dar um role denovo qualquer dia desses."
+description_encoreact1_nomiss: "Complete o Ato 1 no Modo Encore e sem errar."
+
+achievement_act2_nomiss: "Polly Pocket!!"
+description_act2_nomiss: "Complete o Ato 2 no Modo Dificil e sem errar."
+
+achievement_encoreact2_nomiss: "Cara... tu nao gosta de sorvete... cala boca..."
+description_encoreact2_nomiss: "Complete o Ato 2 no Modo Encore e sem errar."
+
+achievement_botofe: "So tenho 17 conto na minha carteira."
+description_botofe: "Complete a musica Boto fe."
+
+achievement_super: "Agora voce vai ver! RAAAAAH!!"
+description_super: "Pegue 50 Aneis."
+
+
+achievement_botofe: "So tenho 17 conto na minha carteira."
+description_botofe: "Complete a Musica Boto fe."
+
+achievement_info: "Entao voce curte historias huh? LEGAL!"
+description_info: "Abra o Menu de Bios."
+
 achievement_friday_night_play: "Sextou"
 description_friday_night_play: "Jogue em uma noite... de Sexta."
 achievement_week1_nomiss: "Ela Também me Chama de Daddy"

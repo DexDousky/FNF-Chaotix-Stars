@@ -39,7 +39,6 @@ class Achievements {
 		createAchievement('botofe',		    		{name: "I just got 17 bucks on my wallet", description: "Beat \"Boto fé\"."});
 		createAchievement('super',			    	{name: "Now I'll Show you! RAAAH!!!!", description: "Get 50 rings"});
 		createAchievement('info',		    		{name: "So you\'re into lore stuff huh? that\'s cool!", description: "Open Bios Menu."});
-		
 		createAchievement('friday_night_play',		{name: "Freaky on a Friday Night", description: "Play on a Friday... Night.", hidden: true});
 		#if BASE_GAME_FILES
 		createAchievement('week1_nomiss',			{name: "She Calls Me Daddy Too", description: "Beat Week 1 on Hard with no Misses."});
@@ -63,12 +62,7 @@ class Achievements {
 		#if BASE_GAME_FILES
 		createAchievement('debugger',				{name: "Debugger", description: "Beat the \"Test\" Stage from the Chart Editor.", hidden: true});
 		#end
-		#if (TITLE_SCREEN_EASTER_EGG || PSYCH_WATERMARKS)
-		createAchievement('pessy_easter_egg',		{name: "Engine Gal Pal", description: "Teehee, you found me~!", hidden: true});
-		#end
-	
-
-
+		
 		//dont delete this thing below
 		_originalLength = _sortID + 1;
 	}
