@@ -19,6 +19,7 @@ class CreditsState extends MusicBeatState
 
 	override function create()
 	{
+		#if ACHIEVEMENTS_ALLOWED Achievements.unlock('info'); #end
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
@@ -37,42 +38,52 @@ class CreditsState extends MusicBeatState
 		for (mod in Mods.parseList().enabled) pushModCreditsToList(mod);
 		#end
 
+
+		// Green 64A250
+		// Orange FF6B01
+		// Purple 9E29CF
+		// Yellow FADC45
+		// Red CF2D2D
+		// Blue 378FC7
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 				
 			['CHAOTIX CREW'],
 			['Dex Dousky',							'Dex',				'The head of the mod and did ALMOST everything',			 'https://dousky.carrd.co/',											'FF6B01'],
-			['New Dousky',							'New',				'Owner of New the Wolfox, and supported Dex :3',			 'https://bsky.app/profile/thefolfdousky.bsky.social',					'4B009A'],
-			['Rodney,An Imaginative Person',		'Rodney',			'Coded and Optimized some scripts for the mod',				 'https://www.youtube.com/channel/UCzcbZBZPz6mNOO-DP7F9atA',			'FF6B01'],
-			['Joovictor757',						'joovitor',			'Help Coding arrow colors and the ring mechanic',			 'https://bsky.app/profile/joovict81371542.bsky.social',				'25640E'],
-			['NeonTFlame',							'Neon',				'Animator, Musician and the guy behind \'Hype Encore\' Inst','https://bsky.app/profile/neontflame.bsky.social',						'25640E'],
-			['LeoZone 2.0',							'Leo',				'Artist behind the week 1 and 2 backgrounds',				 'https://bsky.app/profile/leuzone20.bsky.social',						'E1D97D'],
-			['LeoroyX',								'Czerny',			'Charter of Starlight and Souvenir',						 'https://twitter.com/leoroy63',										'25640E'],
+			['New Dousky',							'New',				'Owner of New the Wolfox, and supported Dex :3',			 'https://bsky.app/profile/thefolfdousky.bsky.social',					'9E29CF'],
+			['Rodney,An Imaginative Person',		'Rodney',			'Coded and Optimized some scripts for the mod',				 'https://www.youtube.com/channel/UCzcbZBZPz6mNOO-DP7F9atA',			'9E29CF'],
+			['Joovictor757',						'joovitor',			'Help Coding arrow colors and the ring mechanic',			 'https://bsky.app/profile/joovict81371542.bsky.social',				'64A250'],
+			['NeonTFlame',							'Neon',				'Animator, Musician and the guy behind \'Hype Encore\' Inst','https://bsky.app/profile/neontflame.bsky.social',						'64A250'],
+			['LeoZone 2.0',							'Leo',				'Artist behind the week 1 and 2 backgrounds',				 'https://bsky.app/profile/leuzone20.bsky.social',						'FADC45'],
+			['Ruy Yoshida',							'Ruy Yoshida',		'Artist behind the achievements icons',						 'https://twitter.com/leoroy63',										'FF6B01'],
+			['LeoroyX',								'Czerny',			'Charter of Starlight and Souvenir',						 'https://twitter.com/leoroy63',										'64A250'],
 			
 			[''],
-			
+
 			['Special Guests'],
-			['Step',								'Step',				'Step The Dino',											 'https://bsky.app/profile/passohere.bsky.socia0l',						'FF6B01'],
+			['Step',								'Step',				'Step The Dino',											 'https://bsky.app/profile/passohere.bsky.socia0l',						'CFCFCF'],
+			['Nikolas Angel',						'Nikel',			'Nikel the Wolf',								 			 'https://bsky.app/profile/nikolaslgc.bsky.social',						'CF2D2D'],
 			['Kaique',								'Kaique',			'Kaique the Hedgehog',										 'https://www.youtube.com/watch?v=adX_x5Bc0Vg&t=622s&ab',				'FF6B01'],
-			['Pauly',								'Pauly',			'Pauly the .... bird? (i dont really know what is him)',	 'https://www.youtube.com/watch?v=adX_x5Bc0Vg&t=622s&ab',				'5838F8'],
-			['Spear',								'Spear',			'Spear the Octopus',										 'https://twitter.com/mrblub58',										'F0FFFF'],
-			['Spring',								'Spring',			'Spring the Kiwi',											 'https://bsky.app/profile/neontflame.bsky.social',						'013220'],
-			['Pit',									'Pit',				'Pit the Bull',												 'https://bsky.app/profile/pitthebull.bsky.social',						'013220'],
+			['Pauly',								'Pauly',			'Pauly the .... bird? (i dont really know what is him)',	 'https://www.youtube.com/watch?v=adX_x5Bc0Vg&t=622s&ab',				'378FC7'],
+			['Spear',								'Spear',			'Spear the Octopus',										 'https://twitter.com/mrblub58',										'CF2D2D'],
+			['Spring',								'Spring',			'Spring the Kiwi',											 'https://bsky.app/profile/neontflame.bsky.social',						'64A250'],
+			['Pit',									'Pit',				'Pit the Bull',												 'https://bsky.app/profile/pitthebull.bsky.social',						'64A250'],
+			['Bonely',								'Bonely',			'Bonely the Wendigo',										 'https://x.com/Escapimz',												'FF6B01'],
 			
 			[''],
 
 			['Special Thanks'],
 			['Siwsi',			                	'crowplexus',	    'Close Friend of Dex and helped him teaching the basics',	 'https://twitter.com/IamMorwen',	                               		'CFCFCF'],
 			["Shadow Mario",		                "shadowmario",		"\"Learn how to code dude\" was a cool quote, since then I really started thinking coding shit and here we are :]","https://ko-fi.com/shadowmario",	"444444"],
-			['Blue Hollow',                         'Diogo Blue',		'Metallix (a.k.a Metal Dex) Designer and also a close friend', '',																	'CFCFCF'],
-			['DaricrahDev',                         'DaricrahDev',		'\"The man behind the Bios\""', 							 'https://gamebanana.com/members/2014882',								'CFCFCF'],
+			['Blue Hollow',                         'Diogo Blue',		'Metallix (a.k.a Metal Dex) Designer and also a close friend', '',																	'378FC7'],
+			['DaricrahDev',                         'DaricrahDev',		'The man behind the Bios', 							 		'https://gamebanana.com/members/2014882',								'FADC45'],
 			
 			[''],
 
 			['Testers'],
 			
-			['DarkFrame',                          	'Darkframe',		'\"O I I A I I O I I I A I ... RECEEEBA\""', 					'',																	'625CC1'],
-			['Bellarya',                          	'Bellarya',			'\"california giirls are unforgetableeee-\""', 					'',																	'625CC1'],
-			['Vaktors',                          	'Vaktors',			'\"gostei do mod, tem muitas gostosas\""', 					 	'',																	'625CC1'],
+			['DarkFrame',                          	'Darkframe',		'\"O I I A I I O I I I A I ... RECEEEBA\"', 					'',																	'444444'],
+			['Bellarya',                          	'Bellarya',			'\"california giirls are unforgetableeee-\"', 					'',																	'CF2D2D'],
+			['Vaktors',                          	'Vaktors',			'\"gostei do mod, tem muitas gostosas\"', 					 	'',																	'625CC1'],
 			
 			[''],
 			
@@ -156,9 +167,9 @@ class CreditsState extends MusicBeatState
 		add(descBox);
 
 		descText = new FlxText(50, FlxG.height + offsetThing - 25, 1180, "", 32);
-		descText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER/*, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK*/);
+		descText.setFormat(Paths.font("GHSANS-Regular.ttf"), 25, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		descText.scrollFactor.set();
-		//descText.borderSize = 2.4;
+		descText.borderSize = 2.3;
 		descBox.sprTracker = descText;
 		add(descText);
 

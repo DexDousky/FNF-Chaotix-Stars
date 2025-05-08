@@ -3562,13 +3562,13 @@ class PlayState extends MusicBeatState
 				}
 			}
 			else // any FC achievements, name should be "weekFileName_nomiss", e.g: "week3_nomiss";
-			{
-				if(isStoryMode && campaignMisses + songMisses < 1 && Difficulty.getString().toUpperCase() == 'HARD'
-					&& storyPlaylist.length <= 1 && !changedDifficulty && !usedPractice)
-					unlock = true;
-			}
+				{
+					if(isStoryMode && campaignMisses + songMisses < 1 && Difficulty.getString().toUpperCase() == 'HARD' 
+						&& storyPlaylist.length <= 1 && !changedDifficulty && !usedPractice)
+						unlock = true;
+				}
 
-			if(unlock) Achievements.unlock(name);
+				if(unlock) Achievements.unlock(name);
 		}
 	}
 	#end

@@ -32,13 +32,27 @@ enum abstract AchievementOp(String)
 class Achievements {
 	public static function init()
 	{
-		createAchievement('act1_nomiss',			{name: "You call this \"Light Speed\"??", description: "Beat Act 1 on Hard with no Misses."});
-		createAchievement('encoreact1_nomiss',		{name: "We should play again sometime", description: "Beat Act 1 on Encore with no Misses."});
-		createAchievement('act2_nomiss',		    {name: "POLLY POCKET!!!!!111", description: "Beat Act 2 on Hard with no Misses."});
-		createAchievement('encoreact2_nomiss',		{name: "Dude... you dont like ice cream, shut up....", description: "Beat Act 2 on Encore with no Misses."});
+		// Week FC
+		createAchievement('Act1_nomiss',			{name: "You call this \"Light Speed\"??", description: "Beat Act 1 on Hard with no Misses."});
+	//	createAchievement('encore_Act1_nomiss',		{name: "We should play again sometime", description: "Beat Act 1 on Encore with no Misses."});
+		createAchievement('Act2_nomiss',		    {name: "POLLY POCKET!!!!!111", description: "Beat Act 2 on Hard with no Misses."});
+	//	createAchievement('encore_Act2_nomiss',		{name: "Dude... you dont like ice cream, shut up....", description: "Beat Act 2 on Encore with no Misses."});
+		
+		//Menus
+		createAchievement('lore',		    		{name: "So you\'re into lore stuff huh? that\'s cool!", description: "Open Bios Menu."});
+		createAchievement('info',		    		{name: "Thanks for the Support :3", description: "Open Credits Menu."});
+		//Songs
+		createAchievement('Cinos',					{name: "Mirror of my Hero", description: "Beat Cinos the Hedgehog."});
 		createAchievement('botofe',		    		{name: "I just got 17 bucks on my wallet", description: "Beat \"Boto fé\"."});
-		createAchievement('super',			    	{name: "Now I'll Show you! RAAAH!!!!", description: "Get 50 rings"});
-		createAchievement('info',		    		{name: "So you\'re into lore stuff huh? that\'s cool!", description: "Open Bios Menu."});
+		createAchievement('oh_funk',			    {name: "Nothing persoNEL kid, you deserved that shot.", description: "Beat Sanctimony.", hidden: true});
+		createAchievement('pibby',					{name: "You shouldn\'t be here, like... literraly", description: "Play the scrapped pibby song from the Version 1.0.", hidden: true});
+		//Misc
+		createAchievement('super',			    	{name: "Now I'll Show you! RAAAH!!!!", description: "Get 50 rings."});
+		createAchievement('extra_life',			    {name: "Who told you that only cats have extra lifes?", description: "Get 100 rings... good luck getting that."});
+		
+		
+
+		// Og Psych Achievements
 		createAchievement('friday_night_play',		{name: "Freaky on a Friday Night", description: "Play on a Friday... Night.", hidden: true});
 		#if BASE_GAME_FILES
 		createAchievement('week1_nomiss',			{name: "She Calls Me Daddy Too", description: "Beat Week 1 on Hard with no Misses."});
@@ -166,7 +180,7 @@ class Achievements {
 		var time:Int = openfl.Lib.getTimer();
 		if(Math.abs(time - _lastUnlock) >= 100) //If last unlocked happened in less than 100 ms (0.1s) ago, then don't play sound
 		{
-			FlxG.sound.play(Paths.sound('confirmMenu'), 0.5);
+			FlxG.sound.play(Paths.sound('confirm_Test'), 0.5);
 			_lastUnlock = time;
 		}
 
