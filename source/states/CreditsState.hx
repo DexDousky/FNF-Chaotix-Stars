@@ -30,7 +30,7 @@ class CreditsState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		add(bg);
 		bg.screenCenter();
-		
+
 		grpOptions = new FlxTypedGroup<Alphabet>();
 		add(grpOptions);
 
@@ -46,17 +46,17 @@ class CreditsState extends MusicBeatState
 		// Red CF2D2D
 		// Blue 378FC7
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-				
+
 			['CHAOTIX CREW'],
 			['Dex Dousky',							'Dex',				'The head of the mod and did ALMOST everything',			 'https://dousky.carrd.co/',											'FF6B01'],
 			['New Dousky',							'New',				'Owner of New the Wolfox, and supported Dex :3',			 'https://bsky.app/profile/thefolfdousky.bsky.social',					'9E29CF'],
-			['Rodney,An Imaginative Person',		'Rodney',			'Coded and Optimized some scripts for the mod',				 'https://www.youtube.com/channel/UCzcbZBZPz6mNOO-DP7F9atA',			'9E29CF'],
+			['Rodney, An Imaginative Furball',		'Rodney',			'Coded and Optimized some scripts for the mod',				 'https://linktr.ee/rodney528',			                                '00c8ff'],
 			['Joovictor757',						'joovitor',			'Help Coding arrow colors and the ring mechanic',			 'https://bsky.app/profile/joovict81371542.bsky.social',				'64A250'],
 			['NeonTFlame',							'Neon',				'Animator, Musician and the guy behind \'Hype Encore\' Inst','https://bsky.app/profile/neontflame.bsky.social',						'64A250'],
 			['LeoZone 2.0',							'Leo',				'Artist behind the week 1 and 2 backgrounds',				 'https://bsky.app/profile/leuzone20.bsky.social',						'FADC45'],
 			['Ruy Yoshida',							'Ruy Yoshida',		'Artist behind the achievements icons',						 'https://twitter.com/leoroy63',										'FF6B01'],
 			['LeoroyX',								'Czerny',			'Charter of Starlight and Souvenir',						 'https://twitter.com/leoroy63',										'64A250'],
-			
+
 			[''],
 
 			['Special Guests'],
@@ -68,7 +68,7 @@ class CreditsState extends MusicBeatState
 			['Spring',								'Spring',			'Spring the Kiwi',											 'https://bsky.app/profile/neontflame.bsky.social',						'64A250'],
 			['Pit',									'Pit',				'Pit the Bull',												 'https://bsky.app/profile/pitthebull.bsky.social',						'64A250'],
 			['Bonely',								'Bonely',			'Bonely the Wendigo',										 'https://x.com/Escapimz',												'FF6B01'],
-			
+
 			[''],
 
 			['Special Thanks'],
@@ -76,17 +76,17 @@ class CreditsState extends MusicBeatState
 			["Shadow Mario",		                "shadowmario",		"\"Learn how to code dude\" was a cool quote, since then I really started thinking coding shit and here we are :]","https://ko-fi.com/shadowmario",	"444444"],
 			['Blue Hollow',                         'Diogo Blue',		'Metallix (a.k.a Metal Dex) Designer and also a close friend', '',																	'378FC7'],
 			['DaricrahDev',                         'DaricrahDev',		'The man behind the Bios', 							 		'https://gamebanana.com/members/2014882',								'FADC45'],
-			
+
 			[''],
 
 			['Testers'],
-			
+
 			['DarkFrame',                          	'Darkframe',		'\"O I I A I I O I I I A I ... RECEEEBA\"', 					'',																	'444444'],
 			['Bellarya',                          	'Bellarya',			'\"california giirls are unforgetableeee-\"', 					'',																	'CF2D2D'],
 			['Vaktors',                          	'Vaktors',			'\"gostei do mod, tem muitas gostosas\"', 					 	'',																	'625CC1'],
-			
+
 			[''],
-			
+
 			["Psych Engine Team"],
 			["Shadow Mario",		"shadowmario",		"Main Programmer and Head of Psych Engine",					"https://ko-fi.com/shadowmario",	"444444"],
 			["Riveren",				"riveren",			"Main Artist/Animator of Psych Engine",						"https://x.com/riverennn",			"14967B"],
@@ -116,10 +116,10 @@ class CreditsState extends MusicBeatState
 			["Psych Engine Discord"],
 			["Join the Psych Ward!", "discord", "", "https://discord.gg/2ka77eMXDv", "5165F6"]
 		];
-		
+
 		for(i in defaultList)
 			creditsStuff.push(i);
-	
+
 		for (i => credit in creditsStuff)
 		{
 			var isSelectable:Bool = !unselectableCheck(i);
@@ -147,7 +147,7 @@ class CreditsState extends MusicBeatState
 				if(str.endsWith('-pixel')) icon.antialiasing = false;
 				icon.xAdd = optionText.width + 10;
 				icon.sprTracker = optionText;
-	
+
 				// using a FlxGroup is too much fuss!
 				iconArray.push(icon);
 				add(icon);
@@ -157,7 +157,7 @@ class CreditsState extends MusicBeatState
 			}
 			else optionText.alignment = CENTERED;
 		}
-		
+
 		descBox = new AttachedSprite();
 		descBox.makeGraphic(1, 1, FlxColor.BLACK);
 		descBox.xAdd = -10;
@@ -232,7 +232,7 @@ class CreditsState extends MusicBeatState
 				quitting = true;
 			}
 		}
-		
+
 		for (item in grpOptions.members)
 		{
 			if(!item.bold)
@@ -288,10 +288,10 @@ class CreditsState extends MusicBeatState
 		{
 			descText.visible = descBox.visible = true;
 			descText.y = FlxG.height - descText.height + offsetThing - 60;
-	
+
 			if(moveTween != null) moveTween.cancel();
 			moveTween = FlxTween.tween(descText, {y : descText.y + 75}, 0.25, {ease: FlxEase.sineOut});
-	
+
 			descBox.setGraphicSize(Std.int(descText.width + 20), Std.int(descText.height + 25));
 			descBox.updateHitbox();
 		}
@@ -302,7 +302,7 @@ class CreditsState extends MusicBeatState
 	function pushModCreditsToList(folder:String)
 	{
 		var creditsFile:String = Paths.mods(folder + '/data/credits.txt');
-		
+
 		#if TRANSLATIONS_ALLOWED
 		//trace('/data/credits-${ClientPrefs.data.language}.txt');
 		var translatedCredits:String = Paths.mods(folder + '/data/credits-${ClientPrefs.data.language}.txt');
